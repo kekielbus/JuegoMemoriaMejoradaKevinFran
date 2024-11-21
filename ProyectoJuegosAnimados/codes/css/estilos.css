@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.section {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#info {
+    margin-bottom: 20px;
+}
+
+#restante, #puntuaje, #movimientos {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.carta img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
