@@ -1,0 +1,100 @@
+/* Estilos para el fondo y el contenedor principal */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2e004f; /* Fondo morado oscuro */
+    background-image: url('/Imagenes/fondoKefrok.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    cursor: url('/Imagenes/blancoPuntero.png'), auto;
+}
+
+/* Estilo del encabezado */
+h1 {
+    font-family: 'Adumu Inline', sans-serif;
+    font-size: 40px;
+    color: #df00b3;
+}
+
+/* Estilos para el formulario */
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los inputs del formulario */
+#form-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ff00b3;
+    width: 300px;
+}
+
+/* Estilo para el botón de guardar */
+#form-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff00b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: url('/Imagenes/blancoPuntero.png'), auto;
+}
+
+/* Estilo para los rectángulos de dificultad (en columna) */
+#rectangles-container {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilo para los rectángulos de dificultad */
+.rectangulo {
+    width: 700px; /* Ancho más grande para los rectángulos */
+    height: 100px; /* Alto más pequeño */
+    margin: 20px 0; /* Espaciado vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px; /* Texto más grande */
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: url('/Imagenes/moradoAPuntero.png'), auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el tamaño y sombra */
+}
+
+/* Colores de los rectángulos de dificultad */
+#facil {
+    background-image: url('/Imagenes/Paises.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+#medio {
+    background-image: url('/Imagenes/Animal.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+#dificil {
+    background-image: url('/Imagenes/Clubes.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+#extremo {
+    background-image: url('/Imagenes/Colores.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+/* Efecto hover para aumentar el tamaño y agregar sombra */
+.rectangulo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    box-shadow: 0 0 20px 10px rgba(210, 0, 218, 0.8); /* Sombra blanca */
+}
