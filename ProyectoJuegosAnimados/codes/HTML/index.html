@@ -8,14 +8,21 @@
 </head>
 <body>
     <section class="section">
-        <h1>Juego de Memoria</h1>
+        <h1>Juego de Memoria: Países y Ciudades</h1>
         <div id="info">
-            <div id="restante">Tiempo restante: 40 segundos</div>
+            <div id="restante">Tiempo restante: 90 segundos</div>
             <div id="puntuaje">Puntuaje: 0</div>
             <div id="movimientos">Movimientos: 0</div>
         </div>
         <div id="tablero" class="tablero"></div>
+        <div id="ocpionesFinalizar" style="display:  none;">
+        <button onclick="guardarPuntuacionEnRanking()">Guardar Puntuación</button>
+        <button onclick="redirigirJuegoNiveles()">Ir al juego de niveles</button>
+        <button id="reiniciar" onclick="reiniciarJuegoFinal()">Reiniciar Juego</button>
+        </div>
     </section>
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
+    <script src="ranking.jss"></script>
+    <script src="formulario.js"></script>
 </body>
 </html>
