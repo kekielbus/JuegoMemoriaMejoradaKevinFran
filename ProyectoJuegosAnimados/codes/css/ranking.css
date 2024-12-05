@@ -11,6 +11,11 @@ html, body {
     cursor: url('/Imagenes/blancoPuntero.png'), auto;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #7c7c7c;
+}
+
 /* Estilo para el encabezado */
 h1 {
     font-family: 'Adumu Inline', sans-serif;
@@ -70,14 +75,19 @@ h1 {
 }
 
 #volverInicio {
-    margin-top: 20px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px 20px;
     background-color: #ff00fb;
     color: white;
     font-weight: bold;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: url('/Imagenes/moradoAPuntero.png'), auto;
     text-align: center;
+    position: fixed; /* Mantenerlo visible en la posición */
+    bottom: 20px; /* A 20px del fondo */
+    left: 50%; /* Centrar horizontalmente respecto al viewport */
+    transform: translateX(-50%); /* Ajustar para que quede centrado */
 }
 
 #volverInicio:hover {
